@@ -27,5 +27,11 @@ namespace Assignment__5.Views
         {
             Application.Exit();
         }
+
+        private void OpenSavedOrderButton_Click(object sender, EventArgs e)
+        {
+            Program.startForm.Hide();
+            Program.productInfoForm.Show();
+        }
     }
 }

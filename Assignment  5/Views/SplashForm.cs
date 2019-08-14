@@ -16,5 +16,19 @@ namespace Assignment__5.Views
         {
             InitializeComponent();
         }
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            
+            Program.splashForm.Hide();
+            Program.startForm.Show();
+            SplashTimer.Enabled = false;
+        }
+
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = true;
+        }
+
+       
     }
 }
