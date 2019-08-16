@@ -57,7 +57,7 @@ namespace Assignment__5.Views
             var currentRow = ProductDataGridView.Rows[rowIndex];
             var cost = currentRow.Cells[1].Value.ToString();
             var costDecimal = decimal.Parse(cost);
-            cost = costDecimal.ToString("C2");
+         
             double  tax = 0.13;
             decimal calsalesTotal = costDecimal * (decimal)tax;
             decimal calFinalTotal = calsalesTotal + costDecimal;
@@ -83,29 +83,29 @@ namespace Assignment__5.Views
             var webcam = currentRow.Cells[30].Value.ToString();
 
             string outputString = manufacturer + " " + model + " " + cost;
-
-            Program.productInfo.ProductID = productID;
+            var newProductID = short.Parse(productID);
+            Program.product.productID = newProductID;
             Program.productInfo.salesReturn = calsalesTotal.ToString("C2");
             Program.productInfo.totalReturn = calFinalTotal.ToString("C2");
-            Program.productInfo.Cost = cost;
-            Program.productInfo.Condition = condition;
+            Program.product.cost = costDecimal;
+            Program.product.condition = condition;
 
-            Program.productInfo.Platform = Platform;
-            Program.productInfo.manufactuer = manufacturer;
-            Program.productInfo.OS = OS;
-            Program.productInfo.Model = model;
+            Program.product.platform = Platform;
+            Program.product.manufacturer = manufacturer;
+            Program.product.OS = OS;
+            Program.product.model = model;
 
-            Program.productInfo.Memory = memory;
-            Program.productInfo.CPUBrand = CPU_Brand;
-            Program.productInfo.CPUType = CPU_Type;
+            Program.product.RAM_size = memory;
+            Program.product.CPU_brand = CPU_Brand;
+            Program.product.CPU_type = CPU_Type;
 
-            Program.productInfo.LCD = screenSize;
-            Program.productInfo.CPUNumber = CPU_Num;
-            Program.productInfo.CPUSpeed = CPU_Speed;
+            Program.product.screensize = screenSize;
+            Program.product.CPU_number = CPU_Num;
+            Program.product.CPU_speed = CPU_Speed;
 
-            Program.productInfo.HDD = HDD_Size;
-            Program.productInfo.GPUType = GPU_Type;
-            Program.productInfo.WebCam = webcam;
+            Program.product.HDD_size = HDD_Size;
+            Program.product.GPU_Type = GPU_Type;
+            Program.product.webcam = webcam;
 
             return outputString;
         }

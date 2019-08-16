@@ -58,26 +58,26 @@ namespace Assignment__5.Views
         private void OrderForm_Activated(object sender, EventArgs e)
         {
 
-            CostOrderDataLabel.Text = Program.productInfo.Cost.ToString();
+            CostOrderDataLabel.Text = Program.product.cost.ToString();
             SalesTaxOrderDataLabel.Text = Program.productInfo.salesReturn.ToString();
             TotalOrderDataLabel.Text = Program.productInfo.totalReturn.ToString();
 
-            ConditionOrderDataLabel.Text = Program.productInfo.Condition;
-            PlatformOrderDataLabel.Text = Program.productInfo.Platform;
-            ManufacuterOrderDataLabel.Text = Program.productInfo.manufactuer;
-            OSOrderDataLabel.Text = Program.productInfo.OS;
+            ConditionOrderDataLabel.Text = Program.product.condition;
+            PlatformOrderDataLabel.Text = Program.product.platform;
+            ManufacuterOrderDataLabel.Text = Program.product.manufacturer;
+            OSOrderDataLabel.Text = Program.product.OS;
 
-            ModelOrderDataLabel.Text = Program.productInfo.Model;
-            MemoryOrderDataLabel.Text = Program.productInfo.Memory;
-            CPUBrandOrderDataLabel.Text = Program.productInfo.CPUBrand;
-            CPUTyprOrderDataLabel.Text = Program.productInfo.CPUType;
-            LCDOrderDataLabel.Text = Program.productInfo.LCD;
+            ModelOrderDataLabel.Text = Program.product.model;
+            MemoryOrderDataLabel.Text = Program.product.RAM_size;
+            CPUBrandOrderDataLabel.Text = Program.product.CPU_brand;
+            CPUTyprOrderDataLabel.Text = Program.product.CPU_type;
+            LCDOrderDataLabel.Text = Program.product.screensize;
 
-            CPUNumOrderDataLabel.Text = Program.productInfo.CPUNumber;
-            CPUSpeedOrderDataLabel.Text = Program.productInfo.CPUSpeed;
-            HDDOrderDataLabel.Text = Program.productInfo.HDD;
-            GPUTypeOrderDataLabel.Text = Program.productInfo.GPUType;
-            WebCamOrderDataLabel.Text = Program.productInfo.WebCam;
+            CPUNumOrderDataLabel.Text = Program.product.CPU_number;
+            CPUSpeedOrderDataLabel.Text = Program.product.CPU_speed;
+            HDDOrderDataLabel.Text = Program.product.HDD_size;
+            GPUTypeOrderDataLabel.Text = Program.product.GPU_Type;
+            WebCamOrderDataLabel.Text = Program.product.webcam;
         }
 
         private void FinishButton_Click(object sender, EventArgs e)
