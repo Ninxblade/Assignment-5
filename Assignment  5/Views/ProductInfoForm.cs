@@ -100,5 +100,46 @@ namespace Assignment__5.Views
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            OpenFileDialog.FileName = "Product.txt";
+            OpenFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            var productID = Program.product.productID.ToString();
+            var cost = Program.product.cost.ToString();
+           var result = OpenFileDialog.ShowDialog();
+            if (result != DialogResult.Cancel)
+            {
+                // open a stream to write
+                using (StreamReader intputStream = new StreamReader(
+                    File.Open(OpenFileDialog.FileName, FileMode.Open)))
+                {
+
+                    // write stuff to the file
+                    productID = intputStream.ReadLine();
+                    Program.product.condition = intputStream.ReadLine();
+                    cost = intputStream.ReadLine();
+                    Program.product.platform = intputStream.ReadLine();
+                    Program.product.OS = intputStream.ReadLine();
+                    Program.product.manufacturer = intputStream.ReadLine();
+                    Program.product.model = intputStream.ReadLine();
+                    Program.product.RAM_size = intputStream.ReadLine();
+                    Program.product.CPU_brand = intputStream.ReadLine(); ;
+                    Program.product.CPU_type = intputStream.ReadLine();
+
+                    Program.product.screensize = intputStream.ReadLine();
+                    Program.product.CPU_number = intputStream.ReadLine();
+                    Program.product.CPU_speed = intputStream.ReadLine();
+                    Program.product.HDD_size = intputStream.ReadLine();
+                    Program.product.GPU_Type = intputStream.ReadLine();
+                    Program.product.webcam = intputStream.ReadLine();
+
+                    // cleanup
+                    intputStream.Close();
+                    intputStream.Dispose();
+                }
+            }
+        }
     }
 }

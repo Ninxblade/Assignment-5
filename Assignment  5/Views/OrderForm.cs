@@ -59,8 +59,8 @@ namespace Assignment__5.Views
         {
 
             CostOrderDataLabel.Text = Program.product.cost.ToString();
-            SalesTaxOrderDataLabel.Text = Program.productInfo.salesReturn.ToString();
-            TotalOrderDataLabel.Text = Program.productInfo.totalReturn.ToString();
+            SalesTaxOrderDataLabel.Text = Program.selectForm.salesReturn.ToString();
+            TotalOrderDataLabel.Text = Program.selectForm.totalReturn.ToString();
 
             ConditionOrderDataLabel.Text = Program.product.condition;
             PlatformOrderDataLabel.Text = Program.product.platform;

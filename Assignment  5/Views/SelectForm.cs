@@ -14,6 +14,8 @@ namespace Assignment__5.Views
 {
     public partial class SelectForm : Form
     {
+        public string salesReturn { get; set; }
+        public string totalReturn { get; set; }
         public SelectForm()
         {
             InitializeComponent();
@@ -85,8 +87,8 @@ namespace Assignment__5.Views
             string outputString = manufacturer + " " + model + " " + cost;
             var newProductID = short.Parse(productID);
             Program.product.productID = newProductID;
-            Program.productInfo.salesReturn = calsalesTotal.ToString("C2");
-            Program.productInfo.totalReturn = calFinalTotal.ToString("C2");
+            salesReturn = calsalesTotal.ToString("C2");
+            totalReturn = calFinalTotal.ToString("C2");
             Program.product.cost = costDecimal;
             Program.product.condition = condition;
 

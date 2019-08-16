@@ -85,7 +85,6 @@
     <Compile Include="Views\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ProductInfo.cs" />
     <Compile Include="Views\ProductInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>

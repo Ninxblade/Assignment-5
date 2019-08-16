@@ -106,5 +106,15 @@ namespace Assignment__5.Views
         {
 
         }
+
+        private void LabelCompanyName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
