@@ -58,8 +58,9 @@ namespace Assignment__5.Views
         private void OrderForm_Activated(object sender, EventArgs e)
         {
 
-            CostOrderDataLabel.Text = Program.productInfo.Cost;
-
+            CostOrderDataLabel.Text = Program.productInfo.Cost.ToString();
+            SalesTaxOrderDataLabel.Text = Program.productInfo.salesReturn.ToString();
+            TotalOrderDataLabel.Text = Program.productInfo.totalReturn.ToString();
 
             ConditionOrderDataLabel.Text = Program.productInfo.Condition;
             PlatformOrderDataLabel.Text = Program.productInfo.Platform;

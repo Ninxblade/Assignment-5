@@ -9,7 +9,7 @@ namespace Assignment__5.Views
     public class ProductInfo
     {
         public string ProductID { get; set; }
-        public decimal Cost { get; set; }
+        public string Cost { get; set; }
         public string Condition { get; set; }
         public string Platform { get; set; }
         public string OS { get; set; }
@@ -24,6 +24,8 @@ namespace Assignment__5.Views
         public string HDD { get; set; }
         public string GPUType { get; set; }
         public string WebCam { get; set; }
+        public string salesReturn { get; set; }
+        public string totalReturn { get; set; }
     }
 
 }

@@ -84,6 +84,7 @@
             this.CostOrderDataLabel = new System.Windows.Forms.Label();
             this.SalesTaxOrderDataLabel = new System.Windows.Forms.Label();
             this.TotalOrderDataLabel = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.OrderFromMenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -523,6 +524,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.TotalOrderDataLabel);
             this.groupBox3.Controls.Add(this.SalesTaxOrderDataLabel);
             this.groupBox3.Controls.Add(this.CostOrderDataLabel);
@@ -611,6 +613,16 @@
             this.TotalOrderDataLabel.TabIndex = 6;
             this.TotalOrderDataLabel.Text = "1240.23";
             this.TotalOrderDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(-5, -3);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(112, 25);
+            this.label19.TabIndex = 8;
+            this.label19.Text = "Your Price";
             // 
             // OrderForm
             // 
@@ -701,5 +713,6 @@
         private System.Windows.Forms.Label label16;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Label label19;
     }
 }

@@ -37,7 +37,7 @@ namespace Assignment__5.Views
         {
             ProductIDDataLabel.Text = Program.productInfo.ProductID;
             ConditionDataLabel.Text = Program.productInfo.Condition;
-            CostDataLabel.Text = Program.productInfo.Cost;
+            CostDataLabel.Text = Program.productInfo.Cost.ToString();
 
             PlatformDataLabel.Text = Program.productInfo.Platform;
             ManufactuerDataLabel.Text = Program.productInfo.manufactuer;

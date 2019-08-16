@@ -57,10 +57,10 @@ namespace Assignment__5.Views
             var currentRow = ProductDataGridView.Rows[rowIndex];
             var cost = currentRow.Cells[1].Value.ToString();
             var costDecimal = decimal.Parse(cost);
-            double tax = 0.13;
-            decimal salesTotal = decimal.Parse(cost) * tax;
-
             cost = costDecimal.ToString("C2");
+            double  tax = 0.13;
+            decimal calsalesTotal = costDecimal * (decimal)tax;
+            decimal calFinalTotal = calsalesTotal + costDecimal;
 
 
             var productID = currentRow.Cells[0].Value.ToString();
@@ -85,6 +85,8 @@ namespace Assignment__5.Views
             string outputString = manufacturer + " " + model + " " + cost;
 
             Program.productInfo.ProductID = productID;
+            Program.productInfo.salesReturn = calsalesTotal.ToString("C2");
+            Program.productInfo.totalReturn = calFinalTotal.ToString("C2");
             Program.productInfo.Cost = cost;
             Program.productInfo.Condition = condition;
 
