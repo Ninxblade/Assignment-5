@@ -101,5 +101,10 @@ namespace Assignment__5.Views
             }
         }
         #endregion
+
+        private void LabelVersion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

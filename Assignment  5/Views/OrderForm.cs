@@ -79,5 +79,12 @@ namespace Assignment__5.Views
             GPUTypeOrderDataLabel.Text = Program.productInfo.GPUType;
             WebCamOrderDataLabel.Text = Program.productInfo.WebCam;
         }
+
+        private void FinishButton_Click(object sender, EventArgs e)
+        {
+            string message = "Thank you,for submitting your application.\n Your order will be processing within 7-10 days. ";
+            MessageBox.Show(message);
+            Application.Exit();
+        }
     }
 }
