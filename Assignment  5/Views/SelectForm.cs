@@ -56,14 +56,17 @@ namespace Assignment__5.Views
             var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
             var currentRow = ProductDataGridView.Rows[rowIndex];
             var cost = currentRow.Cells[1].Value.ToString();
-            var costDecimal = Decimal.Parse(cost);
+            var costDecimal = decimal.Parse(cost);
+            double tax = 0.13;
+            decimal salesTotal = decimal.Parse(cost) * tax;
 
             cost = costDecimal.ToString("C2");
+
 
             var productID = currentRow.Cells[0].Value.ToString();
             var manufacturer = currentRow.Cells[2].Value.ToString();
             var model = currentRow.Cells[3].Value.ToString();
-            var screenSize = currentRow.Cells[6].Value.ToString();
+            var screenSize = currentRow.Cells[7].Value.ToString();
 
             var memory = currentRow.Cells[5].Value.ToString();
             var CPU_Brand = currentRow.Cells[10].Value.ToString();

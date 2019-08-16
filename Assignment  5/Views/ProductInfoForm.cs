@@ -35,12 +35,9 @@ namespace Assignment__5.Views
 
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
-
-
-            ManufactuerDataLabel.Text = Program.selectForm.ProductDataGridViewSelectedItem();
-            ProductIDDataLabel.Text = Program.productInfo.ProductID.ToString();
+            ProductIDDataLabel.Text = Program.productInfo.ProductID;
             ConditionDataLabel.Text = Program.productInfo.Condition;
-            CostDataLabel.Text = Program.productInfo.Cost.ToString();
+            CostDataLabel.Text = Program.productInfo.Cost;
 
             PlatformDataLabel.Text = Program.productInfo.Platform;
             ManufactuerDataLabel.Text = Program.productInfo.manufactuer;
@@ -57,9 +54,6 @@ namespace Assignment__5.Views
             HDDDataLabel.Text = Program.productInfo.HDD;
             GPUTypeDataLabel.Text = Program.productInfo.GPUType;
             WebCamDataLabel.Text = Program.productInfo.WebCam;
-
         }
-
-
     }
 }

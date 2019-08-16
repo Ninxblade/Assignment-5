@@ -6,30 +6,10 @@ using System.Threading.Tasks;
 
 namespace Assignment__5.Views
 {
-    enum ProductInfoField
-    {
-        PRODUCTID,
-        COST,
-        CONDITION,
-        PLATFORM,
-        MANUFACTURER,
-        OS,
-        MODEL,
-        MEMORY,
-        CPU_BRAND,
-        CPU_TYPE,
-        LCD,
-        CPU_NUM,
-        CPU_SPEED,
-        HDD,
-        GPU_TYPE,
-        WEB_CAM,
-        NUM_OF_FIELDS
-    }
     public class ProductInfo
     {
         public string ProductID { get; set; }
-        public string Cost { get; set; }
+        public decimal Cost { get; set; }
         public string Condition { get; set; }
         public string Platform { get; set; }
         public string OS { get; set; }

@@ -38,5 +38,45 @@ namespace Assignment__5.Views
             Program.productInfoForm.Show();
             Program.orderForm.Hide();
         }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.orderForm.Hide();
+            Program.aboutForm.Show();
+        }
+
+        private void Label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrderForm_Activated(object sender, EventArgs e)
+        {
+
+            CostOrderDataLabel.Text = Program.productInfo.Cost;
+
+
+            ConditionOrderDataLabel.Text = Program.productInfo.Condition;
+            PlatformOrderDataLabel.Text = Program.productInfo.Platform;
+            ManufacuterOrderDataLabel.Text = Program.productInfo.manufactuer;
+            OSOrderDataLabel.Text = Program.productInfo.OS;
+
+            ModelOrderDataLabel.Text = Program.productInfo.Model;
+            MemoryOrderDataLabel.Text = Program.productInfo.Memory;
+            CPUBrandOrderDataLabel.Text = Program.productInfo.CPUBrand;
+            CPUTyprOrderDataLabel.Text = Program.productInfo.CPUType;
+            LCDOrderDataLabel.Text = Program.productInfo.LCD;
+
+            CPUNumOrderDataLabel.Text = Program.productInfo.CPUNumber;
+            CPUSpeedOrderDataLabel.Text = Program.productInfo.CPUSpeed;
+            HDDOrderDataLabel.Text = Program.productInfo.HDD;
+            GPUTypeOrderDataLabel.Text = Program.productInfo.GPUType;
+            WebCamOrderDataLabel.Text = Program.productInfo.WebCam;
+        }
     }
 }
