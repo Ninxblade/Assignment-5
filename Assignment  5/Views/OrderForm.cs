@@ -8,7 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li 
+/// 301012468 
+/// Order Form to display what the user has selected and display after tax price
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class OrderForm : Form

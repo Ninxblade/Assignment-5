@@ -60,17 +60,56 @@ namespace Assignment__5.Views
 
             cost = costDecimal.ToString("C2");
 
+            var productID = currentRow.Cells[0].Value.ToString();
             var manufacturer = currentRow.Cells[2].Value.ToString();
             var model = currentRow.Cells[3].Value.ToString();
+            var screenSize = currentRow.Cells[6].Value.ToString();
+
+            var memory = currentRow.Cells[5].Value.ToString();
+            var CPU_Brand = currentRow.Cells[10].Value.ToString();
+            var CPU_Type = currentRow.Cells[11].Value.ToString();
+            var CPU_Speed = currentRow.Cells[12].Value.ToString();
+
+            var CPU_Num = currentRow.Cells[13].Value.ToString();
+            var condition = currentRow.Cells[14].Value.ToString();
+            var OS = currentRow.Cells[15].Value.ToString();
+            var Platform = currentRow.Cells[16].Value.ToString();
+
+            var HDD_Size = currentRow.Cells[17].Value.ToString();
+            var GPU_Type = currentRow.Cells[19].Value.ToString();
+            var webcam = currentRow.Cells[30].Value.ToString();
 
             string outputString = manufacturer + " " + model + " " + cost;
+
+            Program.productInfo.ProductID = productID;
+            Program.productInfo.Cost = cost;
+            Program.productInfo.Condition = condition;
+
+            Program.productInfo.Platform = Platform;
+            Program.productInfo.manufactuer = manufacturer;
+            Program.productInfo.OS = OS;
+            Program.productInfo.Model = model;
+
+            Program.productInfo.Memory = memory;
+            Program.productInfo.CPUBrand = CPU_Brand;
+            Program.productInfo.CPUType = CPU_Type;
+
+            Program.productInfo.LCD = screenSize;
+            Program.productInfo.CPUNumber = CPU_Num;
+            Program.productInfo.CPUSpeed = CPU_Speed;
+
+            Program.productInfo.HDD = HDD_Size;
+            Program.productInfo.GPUType = GPU_Type;
+            Program.productInfo.WebCam = webcam;
 
             return outputString;
         }
 
         private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
         {
+
             SelectLabel.Text = ProductDataGridViewSelectedItem();
+      
         }
 
         private void SelectLabel_Click(object sender, EventArgs e)

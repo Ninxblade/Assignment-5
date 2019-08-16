@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li    
+/// 301012468   
+/// Splash do have an event to let the user know something is appering after
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class SplashForm : Form

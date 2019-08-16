@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li
+/// 301012468
+/// Form after splash, allows the user to select what to do with the application
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class StartForm : Form

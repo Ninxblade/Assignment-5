@@ -42,8 +42,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductPrintForm = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.FinishButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.CancelOrderButton = new System.Windows.Forms.Button();
             this.OrderFromMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,15 +145,6 @@
             this.FinishButton.UseVisualStyleBackColor = true;
             this.FinishButton.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(535, 364);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // BackButton
             // 
             this.BackButton.Location = new System.Drawing.Point(423, 364);
@@ -164,14 +155,24 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // CancelOrderButton
+            // 
+            this.CancelOrderButton.Location = new System.Drawing.Point(536, 364);
+            this.CancelOrderButton.Name = "CancelOrderButton";
+            this.CancelOrderButton.Size = new System.Drawing.Size(95, 37);
+            this.CancelOrderButton.TabIndex = 5;
+            this.CancelOrderButton.Text = "Cancel";
+            this.CancelOrderButton.UseVisualStyleBackColor = true;
+            this.CancelOrderButton.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
+            this.Controls.Add(this.CancelOrderButton);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.FinishButton);
             this.Controls.Add(this.OrderFromMenuStrip);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,7 +203,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm ProductPrintForm;
         private System.Windows.Forms.Button FinishButton;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button CancelOrderButton;
     }
 }

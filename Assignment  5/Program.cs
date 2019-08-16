@@ -16,7 +16,7 @@ namespace Assignment__5
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
         public static AboutForm aboutForm;
-
+        public static ProductInfo productInfo;
         public static Product product;
 
         /// <summary>
@@ -34,9 +34,10 @@ namespace Assignment__5
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
+            productInfo = new ProductInfo();
 
             product = new Product();
-            Application.Run(splashForm);
+            Application.Run(selectForm);
 
         }
     }

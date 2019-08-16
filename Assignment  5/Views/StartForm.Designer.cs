@@ -48,22 +48,24 @@
             // 
             // StartOrderButton
             // 
+            this.StartOrderButton.BackColor = System.Drawing.Color.White;
             this.StartOrderButton.Location = new System.Drawing.Point(268, 336);
             this.StartOrderButton.Name = "StartOrderButton";
             this.StartOrderButton.Size = new System.Drawing.Size(251, 37);
             this.StartOrderButton.TabIndex = 3;
             this.StartOrderButton.Text = "Start a New Order";
-            this.StartOrderButton.UseVisualStyleBackColor = true;
+            this.StartOrderButton.UseVisualStyleBackColor = false;
             this.StartOrderButton.Click += new System.EventHandler(this.StartOrderButton_Click);
             // 
             // OpenSavedOrderButton
             // 
+            this.OpenSavedOrderButton.BackColor = System.Drawing.Color.White;
             this.OpenSavedOrderButton.Location = new System.Drawing.Point(268, 410);
             this.OpenSavedOrderButton.Name = "OpenSavedOrderButton";
             this.OpenSavedOrderButton.Size = new System.Drawing.Size(251, 37);
             this.OpenSavedOrderButton.TabIndex = 4;
             this.OpenSavedOrderButton.Text = "Open a Saved Order";
-            this.OpenSavedOrderButton.UseVisualStyleBackColor = true;
+            this.OpenSavedOrderButton.UseVisualStyleBackColor = false;
             this.OpenSavedOrderButton.Click += new System.EventHandler(this.OpenSavedOrderButton_Click);
             // 
             // PictureGroupBox
@@ -81,14 +83,15 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(163, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(480, 39);
+            this.label1.Size = new System.Drawing.Size(390, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Order Your Computer Today!";
             // 
             // StartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
