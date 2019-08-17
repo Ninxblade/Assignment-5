@@ -34,6 +34,7 @@
             this.OpenSavedOrderButton = new System.Windows.Forms.Button();
             this.PictureGroupBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.StartOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // Exitlbutton
@@ -83,13 +84,18 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(163, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 31);
+            this.label1.Size = new System.Drawing.Size(480, 39);
             this.label1.TabIndex = 6;
             this.label1.Text = "Order Your Computer Today!";
             // 
+            // StartOpenFileDialog
+            // 
+            this.StartOpenFileDialog.FileName = "openFileDialog1";
+            this.StartOpenFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.StartOpenFileDialog_FileOk);
+            // 
             // StartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(782, 553);
@@ -117,6 +123,7 @@
         private System.Windows.Forms.Button OpenSavedOrderButton;
         private System.Windows.Forms.GroupBox PictureGroupBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.OpenFileDialog StartOpenFileDialog;
     }
 }
 

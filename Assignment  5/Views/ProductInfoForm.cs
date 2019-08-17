@@ -104,13 +104,15 @@ namespace Assignment__5.Views
         private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            OpenFileDialog.FileName = "Product.txt";
+            OpenFileDialog.FileName = " ";
             OpenFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            var productID = Program.product.productID.ToString();
-            var cost = Program.product.cost.ToString();
-           var result = OpenFileDialog.ShowDialog();
+
+            var result = OpenFileDialog.ShowDialog();
             if (result != DialogResult.Cancel)
             {
+                string productID = Program.product.productID.ToString();
+                var newProductID = short.Parse(productID);
+                string cost = Program.product.cost.ToString() ;
                 // open a stream to write
                 using (StreamReader intputStream = new StreamReader(
                     File.Open(OpenFileDialog.FileName, FileMode.Open)))

@@ -169,7 +169,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -257,6 +257,7 @@
             this.ModelOrderDataLabel.Size = new System.Drawing.Size(123, 32);
             this.ModelOrderDataLabel.TabIndex = 18;
             this.ModelOrderDataLabel.Text = "84558-JJKS";
+            this.ModelOrderDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PlatformOrderDataLabel
             // 
@@ -266,6 +267,7 @@
             this.PlatformOrderDataLabel.Size = new System.Drawing.Size(118, 31);
             this.PlatformOrderDataLabel.TabIndex = 17;
             this.PlatformOrderDataLabel.Text = "Laptop";
+            this.PlatformOrderDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ManufacuterOrderDataLabel
             // 
@@ -275,6 +277,7 @@
             this.ManufacuterOrderDataLabel.Size = new System.Drawing.Size(108, 32);
             this.ManufacuterOrderDataLabel.TabIndex = 16;
             this.ManufacuterOrderDataLabel.Text = "Acer";
+            this.ManufacuterOrderDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ManufacuterOrderDataLabel.Click += new System.EventHandler(this.Label16_Click);
             // 
             // ConditionOrderDataLabel
@@ -285,6 +288,7 @@
             this.ConditionOrderDataLabel.Size = new System.Drawing.Size(108, 31);
             this.ConditionOrderDataLabel.TabIndex = 15;
             this.ConditionOrderDataLabel.Text = "New";
+            this.ConditionOrderDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label14
             // 

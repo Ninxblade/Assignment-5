@@ -116,5 +116,11 @@ namespace Assignment__5.Views
         {
             Application.Exit();
         }
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            Program.aboutForm.Hide();
+            Program.orderForm.Show();
+        }
     }
 }

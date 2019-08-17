@@ -36,7 +36,7 @@ namespace Assignment__5
             aboutForm = new AboutForm();
 
             product = new Product();
-            Application.Run(selectForm);
+            Application.Run(splashForm);
 
         }
     }
