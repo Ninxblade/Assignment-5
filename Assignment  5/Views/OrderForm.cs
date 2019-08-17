@@ -21,7 +21,11 @@ namespace Assignment__5.Views
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Print the currnet page infomation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PrintToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
@@ -54,7 +58,11 @@ namespace Assignment__5.Views
         {
 
         }
-
+        /// <summary>
+        /// To disaply the data from the selected product once the form loads
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e)
         {
 
@@ -79,7 +87,11 @@ namespace Assignment__5.Views
             GPUTypeOrderDataLabel.Text = Program.product.GPU_Type;
             WebCamOrderDataLabel.Text = Program.product.webcam;
         }
-
+        /// <summary>
+        /// To let the user visual know the application is complete
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FinishButton_Click(object sender, EventArgs e)
         {
             string message = "Thank you,for submitting your application.\n Your order will be processing within 7-10 days. ";

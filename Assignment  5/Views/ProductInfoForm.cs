@@ -8,7 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li 
+/// 301012468
+/// Product form to display the selected product infomation by the user
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class ProductInfoForm : Form
@@ -33,7 +37,11 @@ namespace Assignment__5.Views
             Program.selectForm.Show();
             Program.productInfoForm.Hide();
         }
-
+        /// <summary>
+        /// Method to convert the data object from the class properties into tesst
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
             ProductIDDataLabel.Text = Program.product.productID.ToString();
@@ -56,7 +64,11 @@ namespace Assignment__5.Views
             GPUTypeDataLabel.Text = Program.product.GPU_Type;
             WebCamDataLabel.Text = Program.product.webcam;
         }
-
+        /// <summary>
+        /// Save Method form the menu tool strip
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // configuration for saveFileDialog
@@ -100,7 +112,11 @@ namespace Assignment__5.Views
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
+        /// <summary>
+        /// Reading a textfile to display the data into the product info form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
@@ -111,8 +127,7 @@ namespace Assignment__5.Views
             if (result != DialogResult.Cancel)
             {
                 string productID = Program.product.productID.ToString();
-                var newProductID = short.Parse(productID);
-                string cost = Program.product.cost.ToString() ;
+                string cost = Program.product.cost.ToString();
                 // open a stream to write
                 using (StreamReader intputStream = new StreamReader(
                     File.Open(OpenFileDialog.FileName, FileMode.Open)))

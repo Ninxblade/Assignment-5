@@ -6,7 +6,11 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li
+/// 301012468
+/// This infomation about the application
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class AboutForm : Form

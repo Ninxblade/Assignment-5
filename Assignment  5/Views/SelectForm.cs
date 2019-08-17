@@ -9,7 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Jason Li
+/// 301012468
+/// To display the selected product by the user
+/// </summary>
 namespace Assignment__5.Views
 {
     public partial class SelectForm : Form
@@ -53,6 +57,10 @@ namespace Assignment__5.Views
 
             return false;
         }
+        /// <summary>
+        /// Grabbing the selected row
+        /// </summary>
+        /// <returns></returns>
         public string ProductDataGridViewSelectedItem()
         {
             var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
@@ -64,7 +72,7 @@ namespace Assignment__5.Views
             decimal calsalesTotal = costDecimal * (decimal)tax;
             decimal calFinalTotal = calsalesTotal + costDecimal;
 
-
+            // Indexing the columns to retrive form the database 
             var productID = currentRow.Cells[0].Value.ToString();
             var manufacturer = currentRow.Cells[2].Value.ToString();
             var model = currentRow.Cells[3].Value.ToString();
@@ -83,8 +91,9 @@ namespace Assignment__5.Views
             var HDD_Size = currentRow.Cells[17].Value.ToString();
             var GPU_Type = currentRow.Cells[19].Value.ToString();
             var webcam = currentRow.Cells[30].Value.ToString();
-
+            //Displaying what the user has selected 
             string outputString = manufacturer + " " + model + " " + cost;
+            //Assigning what the user has selected into the Product properties
             var newProductID = short.Parse(productID);
             Program.product.productID = newProductID;
             salesReturn = calsalesTotal.ToString("C2");
